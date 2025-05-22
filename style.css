@@ -43,9 +43,10 @@ section {
 footer {
     background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
+/*Caraceristicas segun el ancho de la resolucion*/
 @media (width >= 768px) {
     header {
         display: grid;
@@ -102,7 +103,7 @@ footer {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         gap: 1rem;
         grid-template-areas:
             'aside aside'
